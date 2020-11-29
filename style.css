@@ -1,0 +1,165 @@
+/*.introduction
+{
+    color: blue;
+    font-size: 16px;
+}
+p
+{
+    width: 250px;
+    height: 110px;
+    text-align: justify;
+    border: 1px solid black;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.element:nth-child(1)
+{
+    flex: 2;
+}
+.element:nth-child(2)
+{
+    flex: 1;
+}
+
+a[title="Cliquez ici"]
+{
+	text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+a:hover  Apparence au survol des liens 
+{
+   text-decoration: underline;
+   color: green;
+}
+
+a:active  Quand le visiteur clique sur le lien 
+{
+    background-color: #FFCC66;
+}
+a:focus 
+{
+    background-color: #FFCC66;
+}
+a:visited 
+{
+    color: #AAA; 
+p:hover
+{
+	 text-decoration: underline;
+   color: green;
+}
+.class
+{
+    font-family: Impact;
+}
+.imageflottante
+{
+    float: left;
+}
+.dessous
+{
+    clear: both;
+}
+.ok
+{
+    text-decoration:overline;
+}
+body
+{
+    background-image: url("img.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+h1
+{
+    border: 3px blue double;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 6px black ;
+
+
+}
+.parag_opacity
+{
+    color: black;
+    opacity:1;
+}*/
+nav
+{
+    display: inline-block;
+    width: 150px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+section
+{
+    display: inline-block;    
+    border: 1px solid blue;
+    vertical-align: top;
+}
+.element
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.element2
+{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2;
+}
+strong
+{
+   background-color: red; /* Fond rouge */
+   color: yellow; /* Texte de couleur jaune */
+    position: relative;
+   left: 55px;
+   top: 10px;
+}
+
+
+td,th
+{
+    border: 1px solid black;
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
